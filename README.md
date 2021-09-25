@@ -38,5 +38,9 @@ https://github.com/AaronRobinsonMSFT/DNNE#experimental-attribute
 
 # 产出验证
 
-    obj/Debug/net6.0/dnne/bin/dotnetexport.so ：.Net 中的实际方法？
-    obj/Debug/net6.0/dnne/bin/dotnetexportNE.so ： C到出库
+    obj/Debug/net6.0/dnne/bin/dotnetexport.so ：.Net 实际(impl)？
+    obj/Debug/net6.0/dnne/bin/dotnetexportNE.so ： 平台相关的C库(stub)?
+
+    ```bash
+     nm obj/Debug/net6.0/dnne/bin/dotnetexportNE.so|grep FancyName
+    ```
